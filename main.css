@@ -1,0 +1,52 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0;
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  font-size:0.9em;
+}
+
+h1{
+  font-size: 3em;
+  margin:2%;
+}
+
+#home {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+
+#header{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+
+#hangyodon{
+  width:40%;
+  height: 40%;
+}
