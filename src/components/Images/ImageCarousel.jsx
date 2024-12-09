@@ -30,14 +30,14 @@ export function ImageCarousel() {
           <div className="flex flex-col max-h-screen">
             <div className="h-[70vh]">
               <img 
-                src="/images/romephoto/romephoto-1600w.jpg"
+                src={`${import.meta.env.BASE_URL}images/romephoto/romephoto-1600w.jpg`}
                 alt="Rome Photo"
                 className="w-full h-full object-contain"
                 loading="lazy"
-                srcSet="
-                  /images/romephoto/romephoto-800w.webp 800w,
-                  /images/romephoto/romephoto-1200w.webp 1200w,
-                  /images/romephoto/romephoto-1600w.webp 1600w"
+                srcSet={`
+                  ${import.meta.env.BASE_URL}images/romephoto/romephoto-800w.webp 800w,
+                  ${import.meta.env.BASE_URL}images/romephoto/romephoto-1200w.webp 1200w,
+                  ${import.meta.env.BASE_URL}images/romephoto/romephoto-1600w.webp 1600w`}
                 sizes="(max-width: 768px) 100vw,
                        (max-width: 1200px) 80vw,
                        1600px"
@@ -63,14 +63,14 @@ export function ImageCarousel() {
           <div className="flex flex-col max-h-screen">
             <div className="h-[70vh]">
               <img 
-                src="/images/icelanddog/icelanddog-1600w.jpg"
+                src={`${import.meta.env.BASE_URL}images/icelanddog/icelanddog-1600w.jpg`}
                 alt="Iceland Dog Photo"
                 className="w-full h-full object-contain"
                 loading="lazy"
-                srcSet="
-                  /images/icelanddog/icelanddog-800w.webp 800w,
-                  /images/icelanddog/icelanddog-1200w.webp 1200w,
-                  /images/icelanddog/icelanddog-1600w.webp 1600w"
+                srcSet={`
+                  ${import.meta.env.BASE_URL}images/icelanddog/icelanddog-800w.webp 800w,
+                  ${import.meta.env.BASE_URL}images/icelanddog/icelanddog-1200w.webp 1200w,
+                  ${import.meta.env.BASE_URL}images/icelanddog/icelanddog-1600w.webp 1600w`}
                 sizes="(max-width: 768px) 100vw,
                        (max-width: 1200px) 80vw,
                        1600px"
