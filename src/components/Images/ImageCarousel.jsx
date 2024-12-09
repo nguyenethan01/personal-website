@@ -30,14 +30,14 @@ export function ImageCarousel() {
           <div className="flex flex-col max-h-screen">
             <div className="h-[70vh]">
               <img 
-                src={`${import.meta.env.BASE_URL}images/romephoto/romephoto-1600w.jpg`}
+                src="/images/romephoto/romephoto-1600w.jpg"
                 alt="Rome Photo"
                 className="w-full h-full object-contain"
                 loading="lazy"
-                srcSet={`
-                  ${import.meta.env.BASE_URL}images/romephoto/romephoto-800w.webp 800w,
-                  ${import.meta.env.BASE_URL}images/romephoto/romephoto-1200w.webp 1200w,
-                  ${import.meta.env.BASE_URL}images/romephoto/romephoto-1600w.webp 1600w`}
+                srcSet="
+                  /images/romephoto/romephoto-800w.webp 800w,
+                  /images/romephoto/romephoto-1200w.webp 1200w,
+                  /images/romephoto/romephoto-1600w.webp 1600w"
                 sizes="(max-width: 768px) 100vw,
                        (max-width: 1200px) 80vw,
                        1600px"
