@@ -1,0 +1,48 @@
+.custom-swiper {
+  --swiper-navigation-sides-offset: 0px; /* Reset side offset */
+  position: relative;
+  padding: 0 60px; /* Increased padding for arrows */
+}
+
+.custom-swiper .swiper-slide {
+  opacity: 0;  /* Hide inactive slides */
+  transition: opacity 0.3s;
+}
+
+.custom-swiper .swiper-slide-active {
+  opacity: 1;  /* Show active slide */
+}
+
+/* Style the navigation arrows */
+.custom-swiper .swiper-button-prev,
+.custom-swiper .swiper-button-next {
+  color: #666;  /* Arrow color */
+  background: rgba(255, 255, 255, 0.8);  /* Semi-transparent background */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 35vh; /* Center vertically relative to image */
+}
+
+/* Position arrows outside the image */
+.custom-swiper .swiper-button-prev {
+  left: 10px; /* Move left arrow outside */
+}
+
+.custom-swiper .swiper-button-next {
+  right: 10px; /* Move right arrow outside */
+}
+
+/* Arrow hover state */
+.custom-swiper .swiper-button-prev:hover,
+.custom-swiper .swiper-button-next:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Resize arrow icons */
+.custom-swiper .swiper-button-prev::after,
+.custom-swiper .swiper-button-next::after {
+  font-size: 20px;
+} 
