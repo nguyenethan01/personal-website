@@ -30,18 +30,16 @@ jobs:
           echo "VITE_WEATHER_API_KEY=${{ secrets.VITE_WEATHER_API_KEY }}" >> .env
       - name: Build
         run: |
-          echo "Starting build process..."
           npm run build
-          echo "Build completed. Checking dist directory..."
+          echo "Build completed. Contents of dist directory:"
           ls -la dist
-          echo "Contents of dist directory:"
-          find dist -type f | sort
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: './dist'
+          name: github-pages
+          path: dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
