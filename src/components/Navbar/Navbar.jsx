@@ -10,7 +10,8 @@ export function Navbar() {
           <LocationTimeWidget />
         </div>
         <div className="flex gap-4 items-center">
-          <a href="#" className="hover:text-blue-600">Home</a>
+          <a href="/" className="hover:text-blue-600">Home</a>
+          <a href="/photos" className="hover:text-blue-600">Photos</a>
           <a href="#" className="hover:text-blue-600">About</a>
           <a href="#" className="hover:text-blue-600">Contact</a>
           <Logo />

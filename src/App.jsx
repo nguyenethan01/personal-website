@@ -1,12 +1,18 @@
-import { ImageCarousel } from './components/Images/ImageCarousel'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar/Navbar'
+import { Home } from './pages/Home'
+import { Photos } from './pages/Photos'
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-100">
+    <Router>
       <Navbar />
-      <ImageCarousel />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/photos" element={<Photos />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   )
 }
 
