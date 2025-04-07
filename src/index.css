@@ -7,3 +7,8 @@
     @apply text-gray-800;  /* or any color you want */
   }
 }
+
+/* Apply DM Sans to all elements */
+html, body {
+  font-family: 'DM Sans', sans-serif;
+}
