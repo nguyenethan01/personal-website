@@ -1,5 +1,6 @@
 import { WeatherWidget } from './WeatherWidget'
 import { LocationTimeWidget } from './LocationTimeWidget'
+import { Link } from 'react-router-dom'
 
 export function Navbar() {
   return (
@@ -10,10 +11,10 @@ export function Navbar() {
           <LocationTimeWidget />
         </div>
         <div className="flex gap-4 items-center">
-          <a href="/" className="hover:text-blue-600">Home</a>
-          <a href="/photos" className="hover:text-blue-600">Photos</a>
-          <a href="#" className="hover:text-blue-600">About</a>
-          <a href="#" className="hover:text-blue-600">Contact</a>
+          <Link to="/" className="hover:text-blue-600">Home</Link>
+          <Link to="/photos" className="hover:text-blue-600">Photos</Link>
+          <Link to="/about" className="hover:text-blue-600">About</Link>
+          <Link to="/contact" className="hover:text-blue-600">Contact</Link>
           <Logo />
         </div>
       </div>
